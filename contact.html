@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Esprit Design</title>
+  <meta name="description" content="Contactez Esprit Design pour votre projet de rénovation, d'aménagement ou de décoration intérieure." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-glow page-glow-1"></div>
+  <div class="page-glow page-glow-2"></div>
+  <header class="site-header glass reveal">
+    <a class="brand" href="index.html"><span class="brand-mark">ED</span><span class="brand-text">Esprit Design</span></a>
+    <nav class="site-nav">
+      <a href="projets.html">Projets</a>
+      <a href="agence.html">L'agence</a>
+      <a href="avis.html">Avis</a>
+      <a href="contact.html" class="nav-cta active">Contact</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+  </header>
+  <nav class="mobile-nav glass">
+    <a href="projets.html">Projets</a>
+    <a href="agence.html">L'agence</a>
+    <a href="avis.html">Avis</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="page-main container">
+    <section class="page-hero reveal rise compact-hero">
+      <span class="eyebrow">Contact</span>
+      <h1>Parlons de votre projet.</h1>
+      <p>Rénovation, optimisation des volumes, décoration ou visualisation 3D : premier échange, cadrage clair, réponses concrètes.</p>
+    </section>
+
+    <section class="contact-grid">
+      <article class="glass contact-card reveal">
+        <h2>Coordonnées</h2>
+        <p><strong>Téléphone</strong><br><a href="tel:+33650787111">06 50 78 71 11</a></p>
+        <p><strong>Email</strong><br><a href="mailto:esprit.design.eg@gmail.com">esprit.design.eg@gmail.com</a></p>
+        <p><strong>Zone d'intervention</strong><br>Cabriès, Aix-en-Provence, Marseille, Paris et selon projet.</p>
+      </article>
+      <article class="glass contact-card reveal">
+        <h2>Message</h2>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Formulaire de démonstration : branche ce formulaire plus tard à Formspree, Netlify Forms ou un email.');">
+          <label>Nom<input type="text" placeholder="Votre nom" required></label>
+          <label>Email<input type="email" placeholder="Votre email" required></label>
+          <label>Projet<textarea rows="6" placeholder="Parlez de votre projet"></textarea></label>
+          <button class="btn btn-primary" type="submit">Envoyer</button>
+        </form>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <div><strong>Esprit Design</strong><p>Un premier échange suffit pour cadrer la suite.</p></div>
+    <div class="footer-links"><a href="index.html">Accueil</a><a href="projets.html">Projets</a><a href="agence.html">L'agence</a><a href="avis.html">Avis</a></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
