@@ -1,28 +1,129 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cabinet médical — Esprit Design</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page-glow page-glow-1"></div><div class="page-glow page-glow-2"></div>
-  <header class="site-header glass reveal"><a class="brand" href="index.html"><span class="brand-mark">ED</span><span class="brand-text">Esprit Design</span></a><nav class="site-nav"><a href="projets.html" class="active">Projets</a><a href="agence.html">L'agence</a><a href="avis.html">Avis</a><a href="contact.html" class="nav-cta">Contact</a></nav><button class="menu-toggle" aria-label="Ouvrir le menu">☰</button></header>
-  <nav class="mobile-nav glass"><a href="projets.html">Projets</a><a href="agence.html">L'agence</a><a href="avis.html">Avis</a><a href="contact.html">Contact</a></nav>
-  <main class="page-main container">
-    <section class="project-hero glass theme-cabinet reveal"><span class="eyebrow">Projet professionnel</span><h1>Rénovation de cabinet médical</h1><p>Un projet pensé pour rendre les espaces plus fluides, plus actuels et plus adaptés à l'activité, tout en renforçant la qualité perçue du lieu.</p></section>
-    <section class="project-detail-grid">
-      <article class="glass detail-card reveal"><h2>Objectif</h2><p>Créer un espace fonctionnel et rassurant, cohérent avec l'usage quotidien du cabinet et l'accueil des patients.</p></article>
-      <article class="glass detail-card reveal"><h2>Approche</h2><p>Travailler les volumes, l'ambiance, l'ergonomie et l'image globale sans perdre en simplicité d'usage.</p></article>
-      <article class="glass detail-card reveal"><h2>Résultat</h2><p>Des espaces jugés fonctionnels, modernes et parfaitement adaptés à l'activité par les clientes du cabinet.</p></article>
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="index.html">
+          <img src="assets/logo-esprit-design.png" alt="Logo Esprit Design">
+          <span class="brand-name">Esprit Design</span>
+        </a>
+
+        <div class="nav-links open">
+          <a href="index.html#accueil">Accueil</a>
+          <a href="index.html#projets">Projets</a>
+          <a href="index.html#avis">Avis</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main style="padding-top:120px;">
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-kicker">Projet</span>
+            <h2>Cabinet médical</h2>
+          </div>
+          <p>
+            Une rénovation pensée pour créer un espace professionnel à la fois fonctionnel,
+            moderne, rassurant et agréable à vivre au quotidien.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card" style="min-height:520px;">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1400&q=80" alt="Cabinet médical 1">
+            </div>
+          </div>
+
+          <div class="project-card" style="min-height:520px;">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1400&q=80" alt="Cabinet médical 2">
+            </div>
+          </div>
+
+          <div class="project-card" style="min-height:520px;">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1400&q=80" alt="Cabinet médical 3">
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="mock-gallery reveal"><div class="mock-panel theme-cabinet"></div><div class="mock-panel pale"></div><div class="mock-panel dark"></div></section>
+
+    <section class="section">
+      <div class="container services-layout">
+        <article class="services-card">
+          <span class="section-kicker">Enjeux</span>
+          <h2>Les objectifs du projet.</h2>
+          <ul class="services-list">
+            <li>Moderniser l’image du cabinet</li>
+            <li>Optimiser les espaces et les circulations</li>
+            <li>Créer un cadre rassurant pour les patients</li>
+            <li>Allier fonctionnalité, sobriété et confort visuel</li>
+          </ul>
+        </article>
+
+        <article class="method-card">
+          <span class="section-kicker">Étapes</span>
+          <h2>Déroulé du projet.</h2>
+          <div class="steps">
+            <div class="step">
+              <div class="step-index">01</div>
+              <div>
+                <h3>Diagnostic</h3>
+                <p>Analyse du fonctionnement du cabinet, des contraintes et des besoins spécifiques à l’activité.</p>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="step-index">02</div>
+              <div>
+                <h3>Réorganisation</h3>
+                <p>Redéfinition des zones, des usages et de l’expérience globale du lieu.</p>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="step-index">03</div>
+              <div>
+                <h3>Design</h3>
+                <p>Travail sur l’ambiance, les matériaux, les teintes et la lisibilité des espaces.</p>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="step-index">04</div>
+              <div>
+                <h3>Mise en œuvre</h3>
+                <p>Accompagnement du projet jusqu’à un résultat cohérent, professionnel et accueillant.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
   </main>
-  <footer class="site-footer container"><div><strong>Esprit Design</strong><p>Cabinet médical</p></div><div class="footer-links"><a href="projets.html">Retour aux projets</a><a href="contact.html">Contact</a></div></footer>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>© <span id="year"></span> Esprit Design</div>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
