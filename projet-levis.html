@@ -1,28 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projet Lévis — Esprit Design</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page-glow page-glow-1"></div><div class="page-glow page-glow-2"></div>
-  <header class="site-header glass reveal"><a class="brand" href="index.html"><span class="brand-mark">ED</span><span class="brand-text">Esprit Design</span></a><nav class="site-nav"><a href="projets.html" class="active">Projets</a><a href="agence.html">L'agence</a><a href="avis.html">Avis</a><a href="contact.html" class="nav-cta">Contact</a></nav><button class="menu-toggle" aria-label="Ouvrir le menu">☰</button></header>
-  <nav class="mobile-nav glass"><a href="projets.html">Projets</a><a href="agence.html">L'agence</a><a href="avis.html">Avis</a><a href="contact.html">Contact</a></nav>
-  <main class="page-main container">
-    <section class="project-hero glass theme-levis reveal"><span class="eyebrow">Paris 17e</span><h1>Projet Lévis</h1><p>Rénovation d'un appartement haussmannien de 54 m², pensé comme une résidence secondaire moderne, fonctionnelle et modulable, capable d'accueillir jusqu'à six personnes.</p></section>
-    <section class="project-detail-grid">
-      <article class="glass detail-card reveal"><h2>Objectif</h2><p>Préserver l'âme du lieu tout en réorganisant les usages avec un niveau de confort et de souplesse adapté à une occupation ponctuelle.</p></article>
-      <article class="glass detail-card reveal"><h2>Enjeux</h2><p>Optimiser les volumes, valoriser les éléments existants et apporter une lecture plus contemporaine de l'appartement.</p></article>
-      <article class="glass detail-card reveal"><h2>Intervention</h2><p>Réorganisation intérieure, choix d'ambiance, mise en cohérence des matières, du mobilier et de la circulation.</p></article>
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="index.html">
+          <img src="assets/logo-esprit-design.png" alt="Logo Esprit Design">
+          <span class="brand-name">Esprit Design</span>
+        </a>
+
+        <div class="nav-links open">
+          <a href="index.html#accueil">Accueil</a>
+          <a href="index.html#projets">Projets</a>
+          <a href="index.html#avis">Avis</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main style="padding-top:120px;">
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-kicker">Projet</span>
+            <h2>Projet Lévis</h2>
+          </div>
+          <p>Appartement haussmannien repensé pour gagner en confort, en fonctionnalité et en cohérence esthétique.</p>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card" style="min-height:520px;">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1400&q=80" alt="Projet Lévis 1">
+            </div>
+          </div>
+
+          <div class="project-card" style="min-height:520px;">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1400&q=80" alt="Projet Lévis 2">
+            </div>
+          </div>
+
+          <div class="project-card" style="min-height:520px;">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1400&q=80" alt="Projet Lévis 3">
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="mock-gallery reveal"><div class="mock-panel theme-levis"></div><div class="mock-panel pale"></div><div class="mock-panel dark"></div></section>
+
+    <section class="section">
+      <div class="container services-layout">
+        <article class="services-card">
+          <span class="section-kicker">Enjeux</span>
+          <h2>Les objectifs du projet.</h2>
+          <ul class="services-list">
+            <li>Optimiser les volumes</li>
+            <li>Moderniser sans dénaturer</li>
+            <li>Apporter plus de fluidité</li>
+            <li>Valoriser le bien durablement</li>
+          </ul>
+        </article>
+
+        <article class="method-card">
+          <span class="section-kicker">Étapes</span>
+          <h2>Déroulé du projet.</h2>
+          <div class="steps">
+            <div class="step">
+              <div class="step-index">01</div>
+              <div><h3>Analyse</h3><p>Compréhension du lieu, des contraintes et des usages.</p></div>
+            </div>
+            <div class="step">
+              <div class="step-index">02</div>
+              <div><h3>Conception</h3><p>Réorganisation des espaces et intention esthétique.</p></div>
+            </div>
+            <div class="step">
+              <div class="step-index">03</div>
+              <div><h3>Projection</h3><p>Plans, visuels et arbitrages de matières.</p></div>
+            </div>
+            <div class="step">
+              <div class="step-index">04</div>
+              <div><h3>Réalisation</h3><p>Suivi de cohérence jusqu’au résultat final.</p></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
   </main>
-  <footer class="site-footer container"><div><strong>Esprit Design</strong><p>Projet Lévis</p></div><div class="footer-links"><a href="projets.html">Retour aux projets</a><a href="contact.html">Contact</a></div></footer>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>© <span id="year"></span> Esprit Design</div>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
