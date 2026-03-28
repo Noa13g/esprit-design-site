@@ -1,222 +1,251 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Esprit Design — Architecture d'intérieur</title>
-  <meta name="description" content="Agence d'architecture d'intérieur à Cabriès. Conception, rénovation, décoration et valorisation d'espaces de vie sur mesure." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esprit Design — Architecture d’intérieur</title>
+  <meta name="description" content="Esprit Design conçoit des intérieurs élégants, fonctionnels et sur mesure. Architecture d’intérieur, rénovation, aménagement et décoration.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page-glow page-glow-1"></div>
-  <div class="page-glow page-glow-2"></div>
+  <div class="page-bg"></div>
 
-  <header class="site-header glass reveal">
-    <a class="brand" href="index.html" aria-label="Esprit Design accueil">
-      <span class="brand-mark">ED</span>
-      <span class="brand-text">Esprit Design</span>
-    </a>
-    <nav class="site-nav">
-      <a href="projets.html">Projets</a>
-      <a href="agence.html">L'agence</a>
-      <a href="avis.html">Avis</a>
-      <a href="contact.html" class="nav-cta">Contact</a>
-    </nav>
-    <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="index.html" aria-label="Accueil Esprit Design">
+          <img src="assets/logo-esprit-design.png" alt="Logo Esprit Design">
+          <div class="brand-text">
+            <span class="brand-name">Esprit Design</span>
+            <span class="brand-subtitle">Architecture & décoration d’intérieur</span>
+          </div>
+        </a>
+
+        <div class="nav-center" id="nav-center">
+          <a href="index.html" class="active">Accueil</a>
+          <a href="projets.html">Projets</a>
+          <a href="a-propos.html">Agence</a>
+          <a href="avis.html">Avis</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="nav-right">
+          <a class="nav-button" href="contact.html">Parler d’un projet</a>
+          <button class="mobile-toggle" id="mobile-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+        </div>
+      </nav>
+    </div>
   </header>
 
-  <nav class="mobile-nav glass">
-    <a href="projets.html">Projets</a>
-    <a href="agence.html">L'agence</a>
-    <a href="avis.html">Avis</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
   <main>
-    <section class="hero hero-home">
+    <section class="hero">
       <div class="hero-media">
-        <img src="assets/logo-hero.webp" alt="Esprit Design intérieur chaleureux" />
+        <img src="assets/logo-hero.webp" alt="Esprit Design - ambiance intérieure">
         <div class="hero-overlay"></div>
       </div>
-      <div class="hero-content container reveal rise">
-        <div class="eyebrow">Architecture d'intérieur • rénovation • décoration</div>
-        <h1>Concevoir, innover, transformer.</h1>
-        <p>
-          Des espaces fonctionnels, esthétiques et personnalisés, pensés avec exigence,
-          sens du détail et élégance contemporaine.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="projets.html">Découvrir les projets</a>
-          <a class="btn btn-secondary" href="contact.html">Parler du vôtre</a>
-        </div>
-      </div>
-      <div class="hero-scroll">Faire défiler</div>
-    </section>
 
-    <section class="section container reveal">
-      <div class="section-intro split-heading">
-        <div>
-          <span class="eyebrow">L'agence</span>
-          <h2>Un regard créatif, une méthode rigoureuse.</h2>
-        </div>
-        <p>
-          Esprit Design accompagne les particuliers et professionnels dans la transformation
-          et la valorisation de leurs espaces, avec une approche sur mesure qui allie fonctionnalité,
-          cohérence esthétique et maîtrise budgétaire.
-        </p>
-      </div>
+      <div class="container hero-content">
+        <div class="hero-card reveal">
+          <span class="eyebrow">Concevoir · optimiser · sublimer</span>
+          <h1>Des intérieurs élégants, pensés pour durer.</h1>
+          <p>
+            Esprit Design accompagne particuliers et professionnels dans la création
+            d’espaces sur mesure, fonctionnels, sensibles et contemporains.
+          </p>
 
-      <div class="feature-grid">
-        <article class="feature-card glass tilt-card">
-          <span class="feature-number">01</span>
-          <h3>Conception & rendu 3D</h3>
-          <p>Plans, modélisations et projection réaliste pour visualiser le projet avant sa mise en œuvre.</p>
-        </article>
-        <article class="feature-card glass tilt-card">
-          <span class="feature-number">02</span>
-          <h3>Aménagement & décoration</h3>
-          <p>Optimisation des volumes, choix des matières, harmonisation des ambiances et du mobilier.</p>
-        </article>
-        <article class="feature-card glass tilt-card">
-          <span class="feature-number">03</span>
-          <h3>Suivi et coordination</h3>
-          <p>Accompagnement du projet avec échanges fluides, vision claire et attention portée aux finitions.</p>
-        </article>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="projets.html">Voir les réalisations</a>
+            <a class="btn btn-secondary" href="a-propos.html">Découvrir l’agence</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <strong>Portfolio</strong>
+              <span>Pages projet dédiées</span>
+            </div>
+            <div class="hero-stat">
+              <strong>Premium</strong>
+              <span>Expérience moderne et fluide</span>
+            </div>
+            <div class="hero-stat">
+              <strong>Responsive</strong>
+              <span>Mobile, tablette, ordinateur</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section section-dark reveal">
+    <section class="section intro-section">
       <div class="container">
-        <div class="section-intro split-heading light">
+        <div class="section-head reveal">
           <div>
-            <span class="eyebrow">Projets sélectionnés</span>
-            <h2>Des réalisations pensées pour durer.</h2>
+            <span class="section-kicker">L’agence</span>
+            <h2>Un site pensé comme un portfolio haut de gamme.</h2>
           </div>
           <p>
-            Haussmannien, location saisonnière, cabinet médical, studio, cuisine, agrandissement :
-            chaque projet répond à une problématique concrète avec une écriture visuelle claire.
+            L’objectif est simple : montrer le niveau, rassurer immédiatement,
+            donner envie de parcourir les projets et faciliter la prise de contact.
           </p>
         </div>
 
-        <div class="projects-highlight-grid">
-          <a class="project-tile large reveal-scale" href="projet-levis.html">
-            <div class="project-visual theme-levis"></div>
-            <div class="project-info">
-              <span>Paris 17e</span>
-              <h3>Projet Lévis</h3>
-              <p>Appartement haussmannien repensé comme une résidence secondaire élégante et modulable.</p>
-            </div>
-          </a>
-          <a class="project-tile reveal-scale" href="projet-bali.html">
-            <div class="project-visual theme-bali"></div>
-            <div class="project-info">
-              <span>Location saisonnière</span>
-              <h3>Projet Bali</h3>
-              <p>Décoration à petit budget avec impact immédiat et logique coup de cœur.</p>
-            </div>
-          </a>
-          <a class="project-tile reveal-scale" href="projet-cabinet.html">
-            <div class="project-visual theme-cabinet"></div>
-            <div class="project-info">
-              <span>Cabinet médical</span>
-              <h3>Rénovation cabinet</h3>
-              <p>Espaces plus fonctionnels, modernes et parfaitement adaptés à l'activité.</p>
-            </div>
-          </a>
-        </div>
+        <div class="intro-grid">
+          <article class="info-card reveal">
+            <span class="info-label">Positionnement</span>
+            <h3>Sobre, premium, contemporain</h3>
+            <p>Une direction visuelle inspirée des codes les plus élégants du web, sans surcharge inutile.</p>
+          </article>
 
-        <div class="centered-action">
-          <a class="btn btn-primary" href="projets.html">Voir toutes les réalisations</a>
+          <article class="info-card reveal">
+            <span class="info-label">Portfolio</span>
+            <h3>Chaque projet peut vivre seul</h3>
+            <p>Lévis, Bali, cabinet médical ou futurs projets : chacun peut avoir sa propre page détaillée.</p>
+          </article>
+
+          <article class="info-card reveal">
+            <span class="info-label">Objectif</span>
+            <h3>Créer la bonne impression dès les premières secondes</h3>
+            <p>Lisibilité, belles proportions, animations douces et vraie sensation de qualité.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section container reveal">
-      <div class="section-intro split-heading">
-        <div>
-          <span class="eyebrow">Méthode</span>
-          <h2>Une expérience claire du premier échange à la livraison.</h2>
-        </div>
-        <p>
-          Chaque mission suit une logique simple : comprendre le besoin, cadrer le projet,
-          concevoir avec précision et accompagner la mise en œuvre.
-        </p>
-      </div>
-
-      <div class="timeline-grid">
-        <article class="timeline-card glass"><strong>1.</strong><span>Définition du besoin</span></article>
-        <article class="timeline-card glass"><strong>2.</strong><span>Étude du projet & devis</span></article>
-        <article class="timeline-card glass"><strong>3.</strong><span>Conception & visualisation</span></article>
-        <article class="timeline-card glass"><strong>4.</strong><span>Suivi du projet</span></article>
-      </div>
-    </section>
-
-    <section class="section container reveal">
-      <div class="section-intro split-heading">
-        <div>
-          <span class="eyebrow">Avis clients</span>
-          <h2>Une relation de confiance, des résultats concrets.</h2>
-        </div>
-        <div class="rating-summary glass">
-          <div class="rating-value">5.0</div>
+    <section class="section projects-section">
+      <div class="container">
+        <div class="section-head reveal">
           <div>
-            <div class="stars">★★★★★</div>
-            <p>Basé sur les avis clients Google mis en avant.</p>
+            <span class="section-kicker">Réalisations</span>
+            <h2>Une sélection de projets.</h2>
+          </div>
+          <p>
+            Les cartes ci-dessous sont dynamiques et s’alimentent automatiquement
+            à partir de ton fichier <strong>data.js</strong>.
+          </p>
+        </div>
+
+        <div id="featured-projects" class="projects-grid"></div>
+      </div>
+    </section>
+
+    <section class="section method-section">
+      <div class="container method-grid">
+        <article class="method-card reveal">
+          <span class="section-kicker">Méthode</span>
+          <h2>Une approche claire.</h2>
+
+          <div class="steps">
+            <div class="step">
+              <div class="step-index">01</div>
+              <div>
+                <h3>Comprendre</h3>
+                <p>Les contraintes, les usages, le budget et les attentes esthétiques.</p>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="step-index">02</div>
+              <div>
+                <h3>Concevoir</h3>
+                <p>Imaginer un projet cohérent, optimisé et désirable.</p>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="step-index">03</div>
+              <div>
+                <h3>Projeter</h3>
+                <p>Rendre l’intention lisible avec plans, visuels ou rendus 3D.</p>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="step-index">04</div>
+              <div>
+                <h3>Accompagner</h3>
+                <p>Suivre la concrétisation du projet avec exigence et cohérence.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="services-card reveal">
+          <span class="section-kicker">Services</span>
+          <h2>Ce que fait Esprit Design.</h2>
+
+          <ul class="service-list">
+            <li>Architecture d’intérieur</li>
+            <li>Rénovation et réagencement</li>
+            <li>Décoration & sélection matériaux</li>
+            <li>Conception 2D / 3D</li>
+            <li>Optimisation des espaces</li>
+            <li>Suivi esthétique du projet</li>
+          </ul>
+
+          <a class="btn btn-secondary" href="a-propos.html">En savoir plus</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reviews-section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="section-kicker">Avis clients</span>
+            <h2>Une confiance déjà installée.</h2>
+          </div>
+          <p>
+            Les témoignages viennent renforcer ce que le site doit déjà transmettre :
+            sérieux, créativité, écoute et qualité de résultat.
+          </p>
+        </div>
+
+        <div class="reviews-summary reveal">
+          <div class="google-score">
+            <span class="score-number">5.0</span>
+            <div class="score-meta">
+              <div class="stars">★★★★★</div>
+              <div class="score-text">Avis Google sélectionnés</div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="reviews-grid">
-        <article class="review-card glass tilt-card">
-          <div class="stars">★★★★★</div>
-          <p>"Emmanuelle a su transformer mon bien qui était vétuste et mal distribué en un espace moderne et fonctionnel, tout en respectant le budget."</p>
-          <strong>Pascal B.</strong>
-        </article>
-        <article class="review-card glass tilt-card">
-          <div class="stars">★★★★★</div>
-          <p>"Elle a su apporter un regard nouveau et créatif sur notre agrandissement, tout en restant disponible et à l'écoute de nos demandes."</p>
-          <strong>Coralie B.</strong>
-        </article>
-        <article class="review-card glass tilt-card">
-          <div class="stars">★★★★★</div>
-          <p>"Les espaces sont à la fois fonctionnels, modernes et parfaitement adaptés à notre activité."</p>
-          <strong>Anne-Claire Ducos</strong>
-        </article>
-      </div>
-      <div class="centered-action">
-        <a class="btn btn-secondary" href="avis.html">Lire tous les avis</a>
+        <div id="reviews-grid" class="reviews-grid"></div>
       </div>
     </section>
 
-    <section class="section cta-section reveal">
-      <div class="container cta-box glass">
-        <div>
-          <span class="eyebrow">Un projet ?</span>
-          <h2>Imaginons un intérieur qui fonctionne aussi bien qu'il se vit.</h2>
-        </div>
-        <div class="cta-actions">
-          <a class="btn btn-primary" href="tel:+33650787111">06 50 78 71 11</a>
-          <a class="btn btn-secondary" href="mailto:esprit.design.eg@gmail.com">esprit.design.eg@gmail.com</a>
+    <section class="section cta-section">
+      <div class="container">
+        <div class="cta-card reveal">
+          <div>
+            <span class="section-kicker">Contact</span>
+            <h2>Un projet à imaginer&nbsp;?</h2>
+            <p>
+              Paris, Aix-en-Provence, Marseille, Le Lot… Le site est prêt
+              à accueillir les futurs projets et à faciliter le premier échange.
+            </p>
+          </div>
+
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="contact.html">Contacter l’agence</a>
+            <a class="btn btn-secondary" href="projets.html">Voir les projets</a>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer container">
-    <div>
-      <strong>Esprit Design</strong>
-      <p>Architecture d'intérieur • Cabriès / Aix-en-Provence / Paris</p>
-    </div>
-    <div class="footer-links">
-      <a href="projets.html">Projets</a>
-      <a href="agence.html">L'agence</a>
-      <a href="avis.html">Avis</a>
-      <a href="contact.html">Contact</a>
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>© <span id="year"></span> Esprit Design</div>
+      <div>Site statique premium — GitHub Pages</div>
     </div>
   </footer>
-  <script src="script.js"></script>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
