@@ -1,74 +1,68 @@
-const PROJECTS = [
-  {
-    title: "Projet Lévis",
-    location: "Paris",
-    summary: "Rénovation complète d’un appartement haussmannien.",
-    category: "Résidentiel",
-    year: "2024",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
-  },
-  {
-    title: "Cabinet médical",
-    location: "Aix-en-Provence",
-    summary: "Création d’un espace moderne et fonctionnel.",
-    category: "Professionnel",
-    year: "2023",
-    image: "https://images.unsplash.com/photo-1600607687644-c7171b42498f"
-  },
-  {
-    title: "Maison Bali",
-    location: "Bali",
-    summary: "Villa contemporaine inspirée de l’environnement tropical.",
-    category: "Résidentiel",
-    year: "2022",
-    image: "https://images.unsplash.com/photo-1600210492493-0946911123ea"
-  }
-];
+const $ = (selector, root = document) => root.querySelector(selector);
+const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
 
-const REVIEWS = [
-  {
-    text: "Nous sommes ravis du résultat. Le projet est élégant et parfaitement adapté.",
-    author: "Lisa & Anne-Claire"
-  },
-  {
-    text: "Un accompagnement sérieux et créatif du début à la fin.",
-    author: "Client Paris"
-  },
-  {
-    text: "Excellente compréhension de nos besoins.",
-    author: "Client Aix"
-  }
-];
+function initMobileNav() {
+  const toggle = $("#mobile-toggle");
+  const nav = $("#nav-links");
 
-function renderProjects() {
-  const container = document.getElementById("featured-projects");
-  if (!container) return;
+  if (!toggle || !nav) return;
 
-  container.innerHTML = PROJECTS.map(p => `
-    <div class="project-card">
-      <img src="${p.image}">
-      <div class="project-content">
-        <h3>${p.title}</h3>
-        <p>${p.location}</p>
-        <p>${p.summary}</p>
-      </div>
-    </div>
-  `).join("");
+  toggle.addEventListener("click", () => {
+    const isOpen = nav.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  });
+
+  $$("#nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("open");
+      toggle.setAttribute("aria-expanded", "false");
+    });
+  });
 }
 
-function renderReviews() {
-  const container = document.getElementById("reviews-grid");
-  if (!container) return;
+function initReveal() {
+  const items = $$(".reveal");
 
-  container.innerHTML = REVIEWS.map(r => `
-    <div class="quote-card">
-      <p>"${r.text}"</p>
-      <strong>${r.author}</strong>
-    </div>
-  `).join("");
+  if (!("IntersectionObserver" in window)) {
+    items.forEach(el => el.classList.add("is-visible"));
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries, io) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        io.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.12,
+    rootMargin: "0px 0px -8% 0px"
+  });
+
+  items.forEach(item => observer.observe(item));
+}
+
+function initHeroParallax() {
+  const heroImage = $(".hero-media img");
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (!heroImage || reduceMotion) return;
+
+  window.addEventListener("scroll", () => {
+    const y = Math.min(window.scrollY * 0.08, 32);
+    heroImage.style.transform = `scale(1.03) translateY(${y}px)`;
+  }, { passive: true });
+}
+
+function initYear() {
+  const year = $("#year");
+  if (year) year.textContent = new Date().getFullYear();
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  renderProjects();
-  renderReviews();
+  initMobileNav();
+  initReveal();
+  initHeroParallax();
+  initYear();
 });
