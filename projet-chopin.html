@@ -1,128 +1,87 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cabinet médical — Esprit Design</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projet Chopin – Esprit Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <nav class="nav">
-        <a class="brand" href="index.html">
-          <img src="assets/logo-esprit-design.png" alt="Logo Esprit Design">
-          <span class="brand-name">Esprit Design</span>
-        </a>
+  <div class="page-bg"></div>
 
-        <div class="nav-links open">
-          <a href="index.html#accueil">Accueil</a>
-          <a href="index.html#projets">Projets</a>
-          <a href="index.html#avis">Avis</a>
-          <a href="index.html#contact">Contact</a>
-        </div>
-      </nav>
-    </div>
+  <header class="site-header">
+    <nav class="floating-nav" id="navbar">
+      <a class="brand" href="index.html">
+        <span class="brand-logo">
+          <img src="images/logo/logo-color.jpg" alt="Logo Esprit Design" />
+        </span>
+      </a>
+
+      <div class="nav-links" id="nav-links">
+        <a href="index.html#hero">Accueil</a>
+        <a href="projets/projets.html">Projets</a>
+        <a href="index.html#agency">Agence</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
   </header>
 
-  <main style="padding-top:120px;">
-    <section class="section">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <span class="section-kicker">Projet</span>
-            <h2>Cabinet médical</h2>
-          </div>
+  <main style="padding-top: 130px;">
+    <section class="hero-section">
+      <div class="hero-media">
+        <img src="images/chopin/biblio1.jpg" alt="Projet Chopin" />
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-inner">
+        <div class="hero-card reveal">
+          <span class="eyebrow">Maison</span>
+          <h1>Projet Chopin</h1>
           <p>
-            Une rénovation pensée pour créer un espace professionnel à la fois fonctionnel,
-            moderne, rassurant et agréable à vivre au quotidien.
+            Un lieu de vie pensé pour la projection, la douceur et la cohérence d’ensemble.
           </p>
-        </div>
-
-        <div class="projects-grid">
-          <div class="project-card" style="min-height:520px;">
-            <div class="project-image">
-              <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1400&q=80" alt="Cabinet médical 1">
-            </div>
-          </div>
-
-          <div class="project-card" style="min-height:520px;">
-            <div class="project-image">
-              <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1400&q=80" alt="Cabinet médical 2">
-            </div>
-          </div>
-
-          <div class="project-card" style="min-height:520px;">
-            <div class="project-image">
-              <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1400&q=80" alt="Cabinet médical 3">
-            </div>
-          </div>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container services-layout">
-        <article class="services-card">
-          <span class="section-kicker">Enjeux</span>
-          <h2>Les objectifs du projet.</h2>
-          <ul class="services-list">
-            <li>Moderniser l’image du cabinet</li>
-            <li>Optimiser les espaces et les circulations</li>
-            <li>Créer un cadre rassurant pour les patients</li>
-            <li>Allier fonctionnalité, sobriété et confort visuel</li>
-          </ul>
+      <div class="section-head reveal">
+        <div>
+          <span class="section-kicker">Le projet</span>
+          <h2>Une maison lisible, chaleureuse et pleinement habitée.</h2>
+        </div>
+        <p>
+          Une approche qui équilibre fonctionnalité, confort visuel et identité du lieu.
+        </p>
+      </div>
+
+      <div class="split-grid">
+        <article class="agency-panel reveal">
+          <p>
+            Le projet Chopin travaille la relation entre usage, volumes et atmosphère.
+            L’intention est claire : rendre l’espace plus évident, plus doux, plus vivant.
+          </p>
+          <p>
+            Les choix d’aménagement, de matériaux et de rythme participent tous à une lecture plus sereine.
+          </p>
         </article>
 
-        <article class="method-card">
-          <span class="section-kicker">Étapes</span>
-          <h2>Déroulé du projet.</h2>
-          <div class="steps">
-            <div class="step">
-              <div class="step-index">01</div>
-              <div>
-                <h3>Diagnostic</h3>
-                <p>Analyse du fonctionnement du cabinet, des contraintes et des besoins spécifiques à l’activité.</p>
-              </div>
-            </div>
-
-            <div class="step">
-              <div class="step-index">02</div>
-              <div>
-                <h3>Réorganisation</h3>
-                <p>Redéfinition des zones, des usages et de l’expérience globale du lieu.</p>
-              </div>
-            </div>
-
-            <div class="step">
-              <div class="step-index">03</div>
-              <div>
-                <h3>Design</h3>
-                <p>Travail sur l’ambiance, les matériaux, les teintes et la lisibilité des espaces.</p>
-              </div>
-            </div>
-
-            <div class="step">
-              <div class="step-index">04</div>
-              <div>
-                <h3>Mise en œuvre</h3>
-                <p>Accompagnement du projet jusqu’à un résultat cohérent, professionnel et accueillant.</p>
-              </div>
-            </div>
+        <article class="agency-panel reveal">
+          <div class="agency-photo">
+            <img src="images/chopin/biblio1.jpg" alt="Projet Chopin" />
           </div>
         </article>
       </div>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <div class="container footer-content">
-      <div>© <span id="year"></span> Esprit Design</div>
-    </div>
-  </footer>
 
   <script src="script.js"></script>
 </body>
