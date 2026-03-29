@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Réalisations – Esprit Design Architecture</title>
+  <title>Réalisations – Esprit Design</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -14,7 +14,7 @@
 
   <header class="site-header">
     <nav class="floating-nav" id="navbar">
-      <a class="brand" href="../index.html">
+      <a class="brand" href="../index.html" aria-label="Retour accueil">
         <span class="brand-logo">
           <img src="../images/logo/logo-color.jpg" alt="Logo Esprit Design" />
         </span>
@@ -34,54 +34,19 @@
     </nav>
   </header>
 
-  <main style="padding-top: 130px;">
-    <section class="section projects-section">
-      <div class="section-head reveal">
-        <div>
+  <main class="gallery-page-main">
+    <section class="section">
+      <div class="gallery-shell reveal is-visible">
+        <div class="gallery-head">
           <span class="section-kicker">Réalisations</span>
           <h2>Tous les projets.</h2>
+          <p>
+            Une vue d’ensemble claire et premium de tous les univers de l’agence.
+          </p>
         </div>
-        <p>
-          Un panorama du travail de l’agence, projet après projet.
-        </p>
-      </div>
 
-      <div class="projects-grid">
-        <a href="../projet-levis.html" class="project-card reveal">
-          <div class="project-media">
-            <img src="../images/levis/IMG_9079.jpeg" alt="Projet Lévis" />
-          </div>
-          <div class="project-layer"></div>
-          <div class="project-content">
-            <span class="project-badge">Appartement</span>
-            <h3>LEVIS</h3>
-            <p>Rénovation haussmannienne et recherche d’équilibre.</p>
-          </div>
-        </a>
-
-        <a href="../projet-chopin.html" class="project-card reveal">
-          <div class="project-media">
-            <img src="../images/chopin/biblio1.jpg" alt="Projet Chopin" />
-          </div>
-          <div class="project-layer"></div>
-          <div class="project-content">
-            <span class="project-badge">Maison</span>
-            <h3>CHOPIN</h3>
-            <p>Une maison pensée dans la durée, avec chaleur et lisibilité.</p>
-          </div>
-        </a>
-
-        <a href="../projet-bali.html" class="project-card reveal">
-          <div class="project-media">
-            <img src="../images/bali/20231025_143308.jpg" alt="Projet Bali" />
-          </div>
-          <div class="project-layer"></div>
-          <div class="project-content">
-            <span class="project-badge">Ambiance</span>
-            <h3>BALI</h3>
-            <p>Un projet lumineux, sensoriel et très incarné visuellement.</p>
-          </div>
-        </a>
+        <div class="projects-grid all-projects-grid" id="all-projects-grid">
+        </div>
       </div>
     </section>
   </main>
