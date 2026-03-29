@@ -3,57 +3,89 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Réalisations — Esprit Design</title>
-  <meta name="description" content="Découvrez les réalisations Esprit Design : rénovation, décoration, agencement, visualisation 3D et aménagement sur mesure." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <title>Réalisations – Esprit Design Architecture</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
-  <div class="page-glow page-glow-1"></div>
-  <div class="page-glow page-glow-2"></div>
-  <header class="site-header glass reveal">
-    <a class="brand" href="index.html"><span class="brand-mark">ED</span><span class="brand-text">Esprit Design</span></a>
-    <nav class="site-nav">
-      <a href="projets.html" class="active">Projets</a>
-      <a href="agence.html">L'agence</a>
-      <a href="avis.html">Avis</a>
-      <a href="contact.html" class="nav-cta">Contact</a>
+  <div class="page-bg"></div>
+
+  <header class="site-header">
+    <nav class="floating-nav" id="navbar">
+      <a class="brand" href="../index.html">
+        <span class="brand-logo">
+          <img src="../images/logo/logo-color.jpg" alt="Logo Esprit Design" />
+        </span>
+      </a>
+
+      <div class="nav-links" id="nav-links">
+        <a href="../index.html#hero">Accueil</a>
+        <a href="projets.html">Projets</a>
+        <a href="../index.html#agency">Agence</a>
+        <a href="../index.html#contact">Contact</a>
+      </div>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
     </nav>
-    <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
   </header>
-  <nav class="mobile-nav glass">
-    <a href="projets.html">Projets</a>
-    <a href="agence.html">L'agence</a>
-    <a href="avis.html">Avis</a>
-    <a href="contact.html">Contact</a>
-  </nav>
 
-  <main class="page-main container">
-    <section class="page-hero reveal rise compact-hero">
-      <span class="eyebrow">Réalisations</span>
-      <h1>Des projets singuliers, une même exigence de cohérence.</h1>
-      <p>Une sélection de rénovations, aménagements, décorations et visualisations conçues pour répondre à des usages concrets.</p>
-    </section>
+  <main style="padding-top: 130px;">
+    <section class="section projects-section">
+      <div class="section-head reveal">
+        <div>
+          <span class="section-kicker">Réalisations</span>
+          <h2>Tous les projets.</h2>
+        </div>
+        <p>
+          Un panorama du travail de l’agence, projet après projet.
+        </p>
+      </div>
 
-    <section class="project-list-grid">
-      <a href="projet-levis.html" class="portfolio-card glass theme-levis reveal-scale"><div class="portfolio-bg"></div><div><span>Paris</span><h3>Projet Lévis</h3><p>Appartement haussmannien de 54 m² modernisé sans perdre son âme.</p></div></a>
-      <a href="projet-bali.html" class="portfolio-card glass theme-bali reveal-scale"><div class="portfolio-bg"></div><div><span>Location saisonnière</span><h3>Projet Bali</h3><p>Décoration accessible avec effet coup de cœur immédiat.</p></div></a>
-      <a href="projet-cabinet.html" class="portfolio-card glass theme-cabinet reveal-scale"><div class="portfolio-bg"></div><div><span>Cabinet médical</span><h3>Cabinet médical</h3><p>Fonctionnalité, modernité et image professionnelle renforcée.</p></div></a>
-      <article class="portfolio-card glass reveal-scale"><div><span>Provence</span><h3>Projet Chopin Sausset</h3><p>Bâtisse provençale, charme authentique et élégance contemporaine.</p></div></article>
-      <article class="portfolio-card glass reveal-scale"><div><span>Paris</span><h3>Projet Dardanelles</h3><p>Rénovation totale d'une chambre de bonne de 9 m² pour la location.</p></div></article>
-      <article class="portfolio-card glass reveal-scale"><div><span>Aix-en-Provence</span><h3>Projet Pinchinats</h3><p>Transformation d'une cuisine années 70 en cuisine moderne et fonctionnelle.</p></div></article>
-      <article class="portfolio-card glass reveal-scale"><div><span>Appartement</span><h3>Projet Plumier</h3><p>Rénovation complète d'un appartement ancien pour créer deux chambres.</p></div></article>
-      <article class="portfolio-card glass reveal-scale"><div><span>Studio</span><h3>Projet Perché</h3><p>Aménagement sur mesure d'un studio provençal optimisé.</p></div></article>
-      <article class="portfolio-card glass reveal-scale"><div><span>Lot</span><h3>Projet Estang</h3><p>Visualisation 3D détaillée des volumes, matériaux et lumières.</p></div></article>
+      <div class="projects-grid">
+        <a href="../projet-levis.html" class="project-card reveal">
+          <div class="project-media">
+            <img src="../images/levis/IMG_9079.jpeg" alt="Projet Lévis" />
+          </div>
+          <div class="project-layer"></div>
+          <div class="project-content">
+            <span class="project-badge">Appartement</span>
+            <h3>LEVIS</h3>
+            <p>Rénovation haussmannienne et recherche d’équilibre.</p>
+          </div>
+        </a>
+
+        <a href="../projet-chopin.html" class="project-card reveal">
+          <div class="project-media">
+            <img src="../images/chopin/biblio1.jpg" alt="Projet Chopin" />
+          </div>
+          <div class="project-layer"></div>
+          <div class="project-content">
+            <span class="project-badge">Maison</span>
+            <h3>CHOPIN</h3>
+            <p>Une maison pensée dans la durée, avec chaleur et lisibilité.</p>
+          </div>
+        </a>
+
+        <a href="../projet-bali.html" class="project-card reveal">
+          <div class="project-media">
+            <img src="../images/bali/20231025_143308.jpg" alt="Projet Bali" />
+          </div>
+          <div class="project-layer"></div>
+          <div class="project-content">
+            <span class="project-badge">Ambiance</span>
+            <h3>BALI</h3>
+            <p>Un projet lumineux, sensoriel et très incarné visuellement.</p>
+          </div>
+        </a>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer container">
-    <div><strong>Esprit Design</strong><p>Créer des lieux qui racontent une histoire.</p></div>
-    <div class="footer-links"><a href="index.html">Accueil</a><a href="agence.html">L'agence</a><a href="avis.html">Avis</a><a href="contact.html">Contact</a></div>
-  </footer>
-  <script src="script.js"></script>
+  <script src="../script.js"></script>
 </body>
 </html>
