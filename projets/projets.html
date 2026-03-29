@@ -1,15 +1,87 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Réalisations</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toutes les réalisations – Esprit Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
-  <h1>Réalisations</h1>
+  <div class="page-noise"></div>
 
-  <a href="../projet-levis.html">Projet Lévis</a><br>
-  <a href="../projet-cabinet.html">Cabinet médical</a><br>
-  <a href="../projet-bali.html">Projet Bali</a>
+  <header class="site-header">
+    <nav class="floating-nav" id="navbar">
+      <a class="brand" href="../index.html">
+        <span class="brand-mark">
+          <img src="../images/logo.png" alt="Logo Esprit Design" onerror="this.style.display='none'; this.parentNode.innerHTML='ED';">
+        </span>
+        <span class="brand-text">Esprit Design</span>
+      </a>
 
+      <div class="nav-center is-open">
+        <a href="../index.html">Accueil</a>
+        <a href="projets.html">Projets</a>
+        <a href="../index.html#agency">Agence</a>
+        <a href="../index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main style="padding-top: 130px;">
+    <section class="section projects-section">
+      <div class="section-head reveal">
+        <div>
+          <span class="section-kicker">Réalisations</span>
+          <h2>Tous les projets.</h2>
+        </div>
+        <p>
+          Une lecture claire du portfolio, pensée pour donner envie d’entrer dans chaque univers.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <a href="../projet-levis.html" class="project-card reveal">
+          <div class="project-image">
+            <img src="../images/proj1.jpg" alt="Projet Lévis" onerror="this.src='https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80';" />
+          </div>
+          <div class="project-glass">
+            <span class="project-tag">Appartement</span>
+            <h3>LEVIS</h3>
+            <p>Rénovation haussmannienne et optimisation des espaces.</p>
+          </div>
+        </a>
+
+        <a href="../projet-cabinet.html" class="project-card reveal">
+          <div class="project-image">
+            <img src="../images/proj2.jpg" alt="Cabinet médical" onerror="this.src='https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80';" />
+          </div>
+          <div class="project-glass">
+            <span class="project-tag">Professionnel</span>
+            <h3>CABINET</h3>
+            <p>Un projet lisible, accueillant et parfaitement adapté à l’usage.</p>
+          </div>
+        </a>
+
+        <a href="../projet-bali.html" class="project-card reveal">
+          <div class="project-image">
+            <img src="../images/proj3.jpg" alt="Projet Bali" onerror="this.src='https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80';" />
+          </div>
+          <div class="project-glass">
+            <span class="project-tag">Maison</span>
+            <h3>BALI</h3>
+            <p>Un univers lumineux, enveloppant et singulier.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <script src="../script.js"></script>
 </body>
 </html>
