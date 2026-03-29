@@ -13,26 +13,72 @@
 <body>
 
 <!-- NAVBAR -->
-<nav>
-  <a href="index.html">Accueil</a>
-  <a href="projets/projets.html">Réalisations</a>
-  <a href="agence.html">Agence</a>
-  <a href="contact.html">Contact</a>
+<nav class="nav">
+  <div class="logo">ESPRIT DESIGN</div>
+  <div class="nav-links">
+    <a href="index.html">Accueil</a>
+    <a href="projets/projets.html">Réalisations</a>
+    <a href="agence.html">Agence</a>
+    <a href="contact.html">Contact</a>
+  </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-  <h1>Concevoir,<br>innover,<br>transformer</h1>
-  <p>Architecture & décoration d’intérieur</p>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1 class="fade-up">
+      Concevoir,<br>innover,<br>transformer
+    </h1>
+
+    <p class="fade-up delay">
+      Architecture & décoration d’intérieur
+    </p>
+  </div>
 </section>
 
-<!-- INTRO -->
-<section class="intro">
+<!-- PROJETS -->
+<section class="projects">
+  <h2>Réalisations</h2>
+
+  <div class="projects-grid">
+
+    <a href="projet-levis.html" class="project">
+      <img src="https://picsum.photos/800/600?1">
+      <div class="project-overlay">Projet Lévis</div>
+    </a>
+
+    <a href="projet-cabinet.html" class="project">
+      <img src="https://picsum.photos/800/600?2">
+      <div class="project-overlay">Cabinet médical</div>
+    </a>
+
+    <a href="projet-bali.html" class="project">
+      <img src="https://picsum.photos/800/600?3">
+      <div class="project-overlay">Projet Bali</div>
+    </a>
+
+  </div>
+</section>
+
+<!-- AGENCE -->
+<section class="about">
+  <h2>L’agence</h2>
   <p>
     Esprit Design conçoit des espaces élégants, fonctionnels et sur-mesure,
     pensés pour améliorer votre quotidien.
   </p>
 </section>
+
+<!-- CONTACT -->
+<section class="contact">
+  <h2>Un projet ?</h2>
+  <p>06 50 78 71 11</p>
+  <p>esprit.design.eg@gmail.com</p>
+</section>
+
+<script src="script.js"></script>
 
 </body>
 </html>
