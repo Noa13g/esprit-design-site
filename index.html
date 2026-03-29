@@ -1,84 +1,321 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Esprit Design</title>
-
-<link rel="stylesheet" href="styles.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Esprit Design Architecture</title>
+  <meta
+    name="description"
+    content="Esprit Design est une agence d’architecture d’intérieur dédiée à la conception, la transformation et la valorisation des espaces de vie."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
+  <div class="page-noise"></div>
 
-<!-- NAVBAR -->
-<nav class="nav">
-  <div class="logo">ESPRIT DESIGN</div>
-  <div class="nav-links">
-    <a href="index.html">Accueil</a>
-    <a href="projets/projets.html">Réalisations</a>
-    <a href="agence.html">Agence</a>
-    <a href="contact.html">Contact</a>
-  </div>
-</nav>
+  <header class="site-header">
+    <nav class="floating-nav" id="navbar">
+      <a class="brand" href="#top" aria-label="Retour accueil">
+        <span class="brand-mark">
+          <img src="images/logo.png" alt="Logo Esprit Design" onerror="this.style.display='none'; this.parentNode.innerHTML='ED';">
+        </span>
+        <span class="brand-text">Esprit Design</span>
+      </a>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-overlay"></div>
+      <div class="nav-center" id="nav-center">
+        <a href="#hero">Accueil</a>
+        <a href="#projects">Projets</a>
+        <a href="#agency">Agence</a>
+        <a href="#services">Prestations</a>
+        <a href="#reviews">Avis</a>
+        <a href="#contact">Contact</a>
+      </div>
 
-  <div class="hero-content">
-    <h1 class="fade-up">
-      Concevoir,<br>innover,<br>transformer
-    </h1>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </nav>
+  </header>
 
-    <p class="fade-up delay">
-      Architecture & décoration d’intérieur
-    </p>
-  </div>
-</section>
+  <main id="top">
+    <section class="hero-section" id="hero">
+      <div class="hero-media">
+        <img
+          src="images/hero.jpg"
+          alt="Intérieur signé Esprit Design"
+          onerror="this.src='https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80';"
+        />
+        <div class="hero-shade"></div>
+        <div class="hero-glow hero-glow-a"></div>
+        <div class="hero-glow hero-glow-b"></div>
+      </div>
 
-<!-- PROJETS -->
-<section class="projects">
-  <h2>Réalisations</h2>
+      <div class="hero-inner">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Architecture d’intérieur · rénovation · décoration</span>
+          <h1>
+            Concevoir,<br>
+            innover,<br>
+            transformer
+          </h1>
+          <p>
+            Des espaces fonctionnels, esthétiques et personnalisés, où chaque détail
+            reflète votre vision et votre style de vie.
+          </p>
 
-  <div class="projects-grid">
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Découvrir nos réalisations</a>
+            <a class="btn btn-secondary" href="#contact">Parler d’un projet</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <a href="projet-levis.html" class="project">
-      <img src="https://picsum.photos/800/600?1">
-      <div class="project-overlay">Projet Lévis</div>
-    </a>
+    <section class="section projects-section" id="projects">
+      <div class="section-head reveal">
+        <div>
+          <span class="section-kicker">Réalisations</span>
+          <h2>Trois projets, trois univers, une même exigence.</h2>
+        </div>
+        <p>
+          Une sélection pensée pour montrer la diversité de l’agence :
+          appartement, maison et projet professionnel.
+        </p>
+      </div>
 
-    <a href="projet-cabinet.html" class="project">
-      <img src="https://picsum.photos/800/600?2">
-      <div class="project-overlay">Cabinet médical</div>
-    </a>
+      <div class="projects-grid">
+        <a href="projet-levis.html" class="project-card reveal">
+          <div class="project-image">
+            <img
+              src="images/proj1.jpg"
+              alt="Projet Lévis"
+              onerror="this.src='https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80';"
+            />
+          </div>
+          <div class="project-glass">
+            <span class="project-tag">Appartement</span>
+            <h3>LEVIS</h3>
+            <p>Rénovation haussmannienne au service de l’usage et du caractère.</p>
+          </div>
+        </a>
 
-    <a href="projet-bali.html" class="project">
-      <img src="https://picsum.photos/800/600?3">
-      <div class="project-overlay">Projet Bali</div>
-    </a>
+        <a href="projet-cabinet.html" class="project-card reveal">
+          <div class="project-image">
+            <img
+              src="images/proj2.jpg"
+              alt="Cabinet médical"
+              onerror="this.src='https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80';"
+            />
+          </div>
+          <div class="project-glass">
+            <span class="project-tag">Professionnel</span>
+            <h3>CABINET</h3>
+            <p>Un lieu clair, rassurant et parfaitement adapté à l’activité.</p>
+          </div>
+        </a>
 
-  </div>
-</section>
+        <a href="projet-bali.html" class="project-card reveal">
+          <div class="project-image">
+            <img
+              src="images/proj3.jpg"
+              alt="Projet Bali"
+              onerror="this.src='https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80';"
+            />
+          </div>
+          <div class="project-glass">
+            <span class="project-tag">Maison</span>
+            <h3>BALI</h3>
+            <p>Matières, lumière et douceur pour un projet à forte identité.</p>
+          </div>
+        </a>
+      </div>
 
-<!-- AGENCE -->
-<section class="about">
-  <h2>L’agence</h2>
-  <p>
-    Esprit Design conçoit des espaces élégants, fonctionnels et sur-mesure,
-    pensés pour améliorer votre quotidien.
-  </p>
-</section>
+      <div class="projects-cta reveal">
+        <a class="btn btn-dark" href="projets/projets.html">Voir tous les projets</a>
+      </div>
+    </section>
 
-<!-- CONTACT -->
-<section class="contact">
-  <h2>Un projet ?</h2>
-  <p>06 50 78 71 11</p>
-  <p>esprit.design.eg@gmail.com</p>
-</section>
+    <section class="section split-section" id="agency">
+      <div class="split-grid">
+        <article class="reviews-panel reveal" id="reviews">
+          <div class="panel-head">
+            <span class="section-kicker">Avis clients</span>
+            <h2>Une confiance déjà installée.</h2>
+          </div>
 
-<script src="script.js"></script>
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              “Je suis vraiment satisfait du travail réalisé par Esprit Design.
+              Emmanuelle a su transformer mon bien en un espace moderne et fonctionnel,
+              tout en respectant le budget.”
+            </p>
+            <span>Pascal B.</span>
+          </div>
 
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              “Emmanuelle a su apporter un regard nouveau et créatif sur notre agrandissement.
+              Elle est restée disponible et à l’écoute tout au long du projet.”
+            </p>
+            <span>Coralie B.</span>
+          </div>
+
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              “Les espaces sont à la fois fonctionnels, modernes et parfaitement adaptés
+              à notre activité.”
+            </p>
+            <span>Anne-Claire D.</span>
+          </div>
+        </article>
+
+        <article class="agency-panel reveal">
+          <div class="agency-photo">
+            <img
+              src="images/portrait.jpg"
+              alt="Emmanuelle Gobert"
+              onerror="this.src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=80';"
+            />
+          </div>
+
+          <div class="agency-copy">
+            <span class="section-kicker">L’agence</span>
+            <h2>Une approche sensible, structurée et sur mesure.</h2>
+            <p>
+              Esprit Design est une agence d’architecture d’intérieur dédiée à la conception,
+              la transformation et la valorisation des espaces de vie.
+            </p>
+            <p>
+              Fondée par Emmanuelle Gobert, l’agence allie rigueur de gestion de projet
+              et sens du détail pour créer des intérieurs à la fois esthétiques,
+              fonctionnels et durables.
+            </p>
+            <p>
+              Chaque projet est pensé comme une réponse unique, adaptée aux besoins,
+              aux usages et au mode de vie de ses occupants.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section services-section" id="services">
+      <div class="section-head reveal">
+        <div>
+          <span class="section-kicker">Prestations</span>
+          <h2>Un accompagnement complet, du concept à la réalisation.</h2>
+        </div>
+        <p>
+          Une offre lisible, haut de gamme et adaptable au niveau d’accompagnement souhaité.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card reveal">
+          <div class="service-index">01</div>
+          <h3>Conception & rendu 3D</h3>
+          <p>
+            Visualisation complète de votre projet pour affiner chaque décision
+            et vous projeter dans le résultat final.
+          </p>
+          <span class="service-link">Découvrir</span>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-index">02</div>
+          <h3>Aménagement & décoration</h3>
+          <p>
+            Des solutions concrètes pour créer un intérieur pratique, cohérent
+            et profondément personnel.
+          </p>
+          <span class="service-link">Découvrir</span>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-index">03</div>
+          <h3>Gestion de projet & supervision</h3>
+          <p>
+            Coordination, suivi esthétique et accompagnement pour garantir
+            une réalisation fidèle à l’intention du projet.
+          </p>
+          <span class="service-link">Découvrir</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section steps-section">
+      <div class="section-head reveal">
+        <div>
+          <span class="section-kicker">Méthode</span>
+          <h2>Les étapes d’un projet Esprit Design.</h2>
+        </div>
+        <p>
+          Une méthode claire, fluide et rassurante, pensée pour accompagner chaque décision.
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <article class="step-card reveal">
+          <span class="step-number">01</span>
+          <h3>Définition du besoin</h3>
+          <p>Échange sur les attentes, les contraintes, les envies et le budget.</p>
+        </article>
+
+        <article class="step-card reveal">
+          <span class="step-number">02</span>
+          <h3>Étude & devis</h3>
+          <p>Analyse de faisabilité, cadrage du projet et proposition détaillée.</p>
+        </article>
+
+        <article class="step-card reveal">
+          <span class="step-number">03</span>
+          <h3>Conception</h3>
+          <p>Plans, ambiances, modélisation et arbitrages pour construire la vision.</p>
+        </article>
+
+        <article class="step-card reveal">
+          <span class="step-number">04</span>
+          <h3>Suivi de chantier</h3>
+          <p>Accompagnement de la réalisation jusqu’à un résultat cohérent et maîtrisé.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-shell reveal">
+        <span class="section-kicker">Contact</span>
+        <h2>Un projet ? Contactons-nous.</h2>
+        <div class="contact-lines">
+          <a href="tel:+33650787111">06 50 78 71 11</a>
+          <a href="mailto:esprit.design.eg@gmail.com">esprit.design.eg@gmail.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">Esprit Design Architecture</div>
+      <div class="footer-links">
+        <a href="#agency">L’agence</a>
+        <a href="#services">Prestations</a>
+        <a href="projets/projets.html">Réalisations</a>
+        <a href="#contact">Contact</a>
+        <a href="#reviews">Témoignages</a>
+      </div>
+      <div class="footer-copy">Copyright © 2025 – Esprit Design Architecture</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
