@@ -1,128 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projet Bali — Esprit Design</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projet Bali – Esprit Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <nav class="nav">
-        <a class="brand" href="index.html">
-          <img src="assets/logo-esprit-design.png" alt="Logo Esprit Design">
-          <span class="brand-name">Esprit Design</span>
-        </a>
+  <div class="page-bg"></div>
 
-        <div class="nav-links open">
-          <a href="index.html#accueil">Accueil</a>
-          <a href="index.html#projets">Projets</a>
-          <a href="index.html#avis">Avis</a>
-          <a href="index.html#contact">Contact</a>
-        </div>
-      </nav>
-    </div>
+  <header class="site-header">
+    <nav class="floating-nav" id="navbar">
+      <a class="brand" href="index.html">
+        <span class="brand-logo">
+          <img src="images/logo/logo-color.jpg" alt="Logo Esprit Design" />
+        </span>
+      </a>
+
+      <div class="nav-links" id="nav-links">
+        <a href="index.html#hero">Accueil</a>
+        <a href="projets/projets.html">Projets</a>
+        <a href="index.html#agency">Agence</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
   </header>
 
-  <main style="padding-top:120px;">
-    <section class="section">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <span class="section-kicker">Projet</span>
-            <h2>Projet Bali</h2>
-          </div>
+  <main style="padding-top: 130px;">
+    <section class="hero-section">
+      <div class="hero-media">
+        <img src="images/bali/20231025_143308.jpg" alt="Projet Bali" />
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-inner">
+        <div class="hero-card reveal">
+          <span class="eyebrow">Ambiance</span>
+          <h1>Projet Bali</h1>
           <p>
-            Un projet résidentiel pensé autour de la lumière, des matières naturelles
-            et d’une ambiance douce, élégante et contemporaine.
+            Un projet porté par la lumière, les matières et une identité très enveloppante.
           </p>
-        </div>
-
-        <div class="projects-grid">
-          <div class="project-card" style="min-height:520px;">
-            <div class="project-image">
-              <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1400&q=80" alt="Projet Bali 1">
-            </div>
-          </div>
-
-          <div class="project-card" style="min-height:520px;">
-            <div class="project-image">
-              <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1400&q=80" alt="Projet Bali 2">
-            </div>
-          </div>
-
-          <div class="project-card" style="min-height:520px;">
-            <div class="project-image">
-              <img src="https://images.unsplash.com/photo-1505693536863-6d45be7858e1?auto=format&fit=crop&w=1400&q=80" alt="Projet Bali 3">
-            </div>
-          </div>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container services-layout">
-        <article class="services-card">
-          <span class="section-kicker">Enjeux</span>
-          <h2>Les objectifs du projet.</h2>
-          <ul class="services-list">
-            <li>Créer une ambiance chaleureuse et lumineuse</li>
-            <li>Travailler les matières avec subtilité</li>
-            <li>Apporter une vraie cohérence d’ensemble</li>
-            <li>Faire dialoguer lignes contemporaines et douceur du lieu</li>
-          </ul>
+      <div class="section-head reveal">
+        <div>
+          <span class="section-kicker">Le projet</span>
+          <h2>Une atmosphère sensible, lumineuse et immédiatement mémorable.</h2>
+        </div>
+        <p>
+          Un travail sur l’émotion du lieu, sans jamais perdre la précision de l’aménagement.
+        </p>
+      </div>
+
+      <div class="split-grid">
+        <article class="agency-panel reveal">
+          <p>
+            Le projet Bali assume une présence plus émotionnelle et sensorielle.
+            Il montre la capacité de l’agence à construire une ambiance forte,
+            sans sacrifier la lisibilité ni le confort.
+          </p>
+          <p>
+            Matières, lumière, rythme et profondeur visuelle composent ici une identité très marquée.
+          </p>
         </article>
 
-        <article class="method-card">
-          <span class="section-kicker">Étapes</span>
-          <h2>Déroulé du projet.</h2>
-          <div class="steps">
-            <div class="step">
-              <div class="step-index">01</div>
-              <div>
-                <h3>Inspiration</h3>
-                <p>Définition de l’ambiance générale, des références et de la direction esthétique.</p>
-              </div>
-            </div>
-
-            <div class="step">
-              <div class="step-index">02</div>
-              <div>
-                <h3>Conception</h3>
-                <p>Structuration des volumes, des circulations et des grands équilibres visuels.</p>
-              </div>
-            </div>
-
-            <div class="step">
-              <div class="step-index">03</div>
-              <div>
-                <h3>Sélection</h3>
-                <p>Choix des matières, des teintes, des textures et des éléments d’aménagement.</p>
-              </div>
-            </div>
-
-            <div class="step">
-              <div class="step-index">04</div>
-              <div>
-                <h3>Finalisation</h3>
-                <p>Mise en cohérence du projet pour obtenir un lieu harmonieux, sensible et durable.</p>
-              </div>
-            </div>
+        <article class="agency-panel reveal">
+          <div class="agency-photo">
+            <img src="images/bali/20231025_143308.jpg" alt="Projet Bali" />
           </div>
         </article>
       </div>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <div class="container footer-content">
-      <div>© <span id="year"></span> Esprit Design</div>
-    </div>
-  </footer>
 
   <script src="script.js"></script>
 </body>
